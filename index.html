@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+          
+
+    <script>
+      
+
+        // DOM Method //
+
+        let sections=document.createElement("section");
+        document.body.appendChild(sections);
+
+        let inp1=document.createElement("input");
+        sections.appendChild(inp1);
+
+        let inp2=document.createElement("input");
+        sections.appendChild(inp2);
+
+        let inp3=document.createElement("input");
+        sections.appendChild(inp3);
+
+        let btn=document.createElement("button");
+        btn.innerText="submit";
+        btn.setAttribute("onclick","sum()");
+         sections.appendChild(btn);
+
+        function sum(){
+            a=parseInt(inp1.value);
+            b=parseInt(inp2.value);
+            c=parseInt(inp3.value);   
+
+        if((a>b) && (a>c)){
+           console.log(a);
+        }
+        else if((b>a) && (b>c)){
+            console.log(b);
+        }
+        else{
+            console.log(c);
+        }
+    }
+    
+
+     
+       
+    
+   
+    
+    </script>
+</body>
+</html>
